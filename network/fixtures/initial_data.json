@@ -1,0 +1,257 @@
+[
+  {
+    "model": "network.contact",
+    "pk": 1,
+    "fields": {
+      "email": "factory1@example.com",
+      "country": "Россия",
+      "city": "Москва",
+      "street": "Заводская",
+      "house_number": "1"
+    }
+  },
+  {
+    "model": "network.contact",
+    "pk": 2,
+    "fields": {
+      "email": "factory2@example.com",
+      "country": "Россия",
+      "city": "Санкт-Петербург",
+      "street": "Промышленная",
+      "house_number": "15"
+    }
+  },
+  {
+    "model": "network.contact",
+    "pk": 3,
+    "fields": {
+      "email": "shop1@example.com",
+      "country": "Россия",
+      "city": "Москва",
+      "street": "Тверская",
+      "house_number": "10"
+    }
+  },
+  {
+    "model": "network.contact",
+    "pk": 4,
+    "fields": {
+      "email": "shop2@example.com",
+      "country": "Россия",
+      "city": "Казань",
+      "street": "Баумана",
+      "house_number": "25"
+    }
+  },
+  {
+    "model": "network.contact",
+    "pk": 5,
+    "fields": {
+      "email": "ip1@example.com",
+      "country": "Россия",
+      "city": "Екатеринбург",
+      "street": "Ленина",
+      "house_number": "50"
+    }
+  },
+  {
+    "model": "network.contact",
+    "pk": 6,
+    "fields": {
+      "email": "ip2@example.com",
+      "country": "Россия",
+      "city": "Новосибирск",
+      "street": "Красный проспект",
+      "house_number": "100"
+    }
+  },
+  {
+    "model": "network.contact",
+    "pk": 7,
+    "fields": {
+      "email": "ip3@example.com",
+      "country": "Россия",
+      "city": "Сочи",
+      "street": "Морская",
+      "house_number": "7"
+    }
+  },
+  {
+    "model": "network.product",
+    "pk": 1,
+    "fields": {
+      "name": "Ноутбук",
+      "model": "XPS-15",
+      "release_date": "2024-02-15"
+    }
+  },
+  {
+    "model": "network.product",
+    "pk": 2,
+    "fields": {
+      "name": "Смартфон",
+      "model": "Galaxy S23",
+      "release_date": "2024-01-15"
+    }
+  },
+  {
+    "model": "network.product",
+    "pk": 3,
+    "fields": {
+      "name": "Телевизор",
+      "model": "QLED-65",
+      "release_date": "2023-12-15"
+    }
+  },
+  {
+    "model": "network.product",
+    "pk": 4,
+    "fields": {
+      "name": "Планшет",
+      "model": "iPad Pro",
+      "release_date": "2024-02-01"
+    }
+  },
+  {
+    "model": "network.product",
+    "pk": 5,
+    "fields": {
+      "name": "Наушники",
+      "model": "AirPods Pro",
+      "release_date": "2024-03-01"
+    }
+  },
+  {
+    "model": "network.product",
+    "pk": 6,
+    "fields": {
+      "name": "Умные часы",
+      "model": "Watch 6",
+      "release_date": "2023-11-15"
+    }
+  },
+  {
+    "model": "network.product",
+    "pk": 7,
+    "fields": {
+      "name": "Игровая консоль",
+      "model": "PlayStation 5",
+      "release_date": "2023-09-15"
+    }
+  },
+  {
+    "model": "network.supplier",
+    "pk": 1,
+    "fields": {
+      "name": "Завод \"Электроника\"",
+      "level": 0,
+      "contact": 1,
+      "products": [1, 2, 3, 4],
+      "supplier": null,
+      "debt": "0.00",
+      "created_at": "2024-03-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "network.supplier",
+    "pk": 2,
+    "fields": {
+      "name": "Завод \"Технопром\"",
+      "level": 0,
+      "contact": 2,
+      "products": [3, 4, 5, 6],
+      "supplier": null,
+      "debt": "0.00",
+      "created_at": "2024-03-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "network.supplier",
+    "pk": 3,
+    "fields": {
+      "name": "Магазин \"Техносила\"",
+      "level": 1,
+      "contact": 3,
+      "products": [1, 2, 5],
+      "supplier": 1,
+      "debt": "150000.50",
+      "created_at": "2024-03-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "network.supplier",
+    "pk": 4,
+    "fields": {
+      "name": "Магазин \"Эльдорадо\"",
+      "level": 1,
+      "contact": 4,
+      "products": [3, 4, 6],
+      "supplier": 2,
+      "debt": "200000.75",
+      "created_at": "2024-03-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "network.supplier",
+    "pk": 5,
+    "fields": {
+      "name": "Магазин \"М.Видео\"",
+      "level": 1,
+      "contact": 5,
+      "products": [2, 5, 7],
+      "supplier": 1,
+      "debt": "95000.25",
+      "created_at": "2024-03-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "network.supplier",
+    "pk": 6,
+    "fields": {
+      "name": "ИП Иванов А.А.",
+      "level": 2,
+      "contact": 6,
+      "products": [1, 5],
+      "supplier": 3,
+      "debt": "25000.00",
+      "created_at": "2024-03-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "network.supplier",
+    "pk": 7,
+    "fields": {
+      "name": "ИП Петрова Е.В.",
+      "level": 2,
+      "contact": 7,
+      "products": [3, 6],
+      "supplier": 4,
+      "debt": "12750.50",
+      "created_at": "2024-03-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "network.supplier",
+    "pk": 8,
+    "fields": {
+      "name": "ИП Сидоров М.И.",
+      "level": 2,
+      "contact": 8,
+      "products": [2, 7],
+      "supplier": 5,
+      "debt": "8900.00",
+      "created_at": "2024-03-17T10:00:00Z"
+    }
+  },
+  {
+    "model": "network.contact",
+    "pk": 8,
+    "fields": {
+      "email": "ip.sidorov@example.com",
+      "country": "Россия",
+      "city": "Самара",
+      "street": "Куйбышева",
+      "house_number": "25"
+    }
+  }
+]
